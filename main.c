@@ -3,7 +3,7 @@
 
 int main()
 {
-    int i, t, *p;
+    int i, t;
 
     scanf("%d", &t);
 
@@ -22,17 +22,15 @@ int main()
 
         for (i = 0; i < t; i++) {
             if(i == 0){
-            printf("[%d", p[0]);
-            } else {
+            printf("[", p[0]);
+            } 
 
-            printf(",%d", p[i]);}
-        }
-
-
-        if (i < t - 1) {
+            printf(",%d", p[i]);
+        
+            if (i < t - 1) {
             printf(", ");
         }
-
+        }
             printf("]\n");
 
 }
