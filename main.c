@@ -3,11 +3,11 @@
 
 int main()
 {
-    int i, t;
+    int i, t, *p;
 
     scanf("%d", &t);
 
-    int *p = malloc(t * sizeof(int));
+    p = malloc(t * sizeof(int));
 
     if (t <= 0) {
 
