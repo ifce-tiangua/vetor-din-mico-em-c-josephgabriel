@@ -5,15 +5,15 @@ int main()
 {
     int i, t, *p;
 
+    p = malloc(t * sizeof(int));
+
     scanf("%d", &t);
 
-    if (t == 0) {
+    if (t <= 0) {
 
         printf("[vazio]\n");
 
     } else {
-
-        p = malloc(t * sizeof(int));
 
         for (i = 0; i < t; i++) {
             scanf("%d", &p[i]);
@@ -33,7 +33,7 @@ int main()
         } else {
             printf("]\n");
         }
-        
+
         free(p);
     }
 return 0;
