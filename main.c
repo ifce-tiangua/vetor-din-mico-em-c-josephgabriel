@@ -22,10 +22,10 @@ int main()
 
         for (i = 0; i < t; i++) {
             if(i == 0){
-            printf("[", p[0]);
+            printf("[");
             } 
 
-            printf(",%d", p[i]);
+            printf("%d", p[i]);
         
             if (i < t - 1) {
             printf(", ");
