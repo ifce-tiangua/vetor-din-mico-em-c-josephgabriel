@@ -5,9 +5,9 @@ int main()
 {
     int i, t, *p;
 
-    p = malloc(t * sizeof(int));
-
     scanf("%d", &t);
+
+    int *p = malloc(t * sizeof(int));
 
     if (t <= 0) {
 
