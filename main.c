@@ -20,21 +20,22 @@ int main()
         }
 
 
-        printf("[%d,", p[0]);
+        for (i = 0; i < t; i++) {
+            if(i == 0){
+            printf("[");
+            }
 
-
-        for (i = 1; i < t - 1; i++) {
-            printf("%d,", p[i]);
+            printf("%d", p[i]);
         }
 
 
-        if (t > 1) {
-            printf("%d]\n", p[t - 1]);
-        } else {
+        if (i < t - 1) {
+            printf(", ");
+        }
+
             printf("]\n");
-        }
 
-        free(p);
-    }
-return 0;
+}
+  free(p);
+  return 0;
 }
